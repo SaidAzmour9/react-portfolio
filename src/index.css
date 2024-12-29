@@ -64,3 +64,14 @@ a{
 .border{
   border: solid 2px var(--border);
 }
+
+button{
+  all: unset;
+}
+button:hover{
+  cursor: pointer;
+}
+
+button:active{
+  scale: 0.96;
+}

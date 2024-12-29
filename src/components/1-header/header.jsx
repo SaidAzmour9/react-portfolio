@@ -5,11 +5,11 @@ import { useState } from 'react';
 function Header() {
   const [showModal, setShowModal] = useState(false); 
   return (
-    <header className='border flex'>
+    <header className='flex'>
       <div>
       <button onClick={()=>{
         setShowModal(true);
-      }} className='menu'>SHow modal</button>
+      }} className='menu icon-menu flex'></button>
       </div>
       <nav>
         <ul className='flex'>
@@ -21,10 +21,18 @@ function Header() {
 
         </ul>
       </nav>
-      <button>light</button>
+      <button className='mode flex'>
+        <span className='icon-moon-o'></span>
+      </button>
     {showModal &&(
       <div className="fixed">
         <ul className='modal'>
+          <li>
+              <button className='icon-close' onClick={() => {
+                setShowModal(false);
+              }
+              }/>
+            </li>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Skills</a></li>
