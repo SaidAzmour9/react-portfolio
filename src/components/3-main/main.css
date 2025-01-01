@@ -1,0 +1,16 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px; /* Optional spacing between grid items */
+}
+
+.about img {
+    grid-column: 1 / 3; /* Spans from the first column to the second column */
+    width: 100%; /* Ensures the image scales properly within its grid area */
+    object-fit: cover; /* Maintains aspect ratio */
+}
+
+.about-content {
+    grid-column: 1/ 3; /* Spans from the second column to the third column */
+    
+}

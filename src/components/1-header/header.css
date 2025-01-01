@@ -92,7 +92,6 @@ header .fixed ul.modal li a{
     font-size: 1rem;
 }
 
-
 @keyframes myHeader{
     0% {scale: 0;}
     60% {scale: 1.2;}
