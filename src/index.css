@@ -39,7 +39,7 @@ body{
 }
 
 .divider{
-  border-bottom: 1px solid var(--border);
+  border-bottom: 0.8px solid var(--border);
   margin: 3rem 0;
 
 }
