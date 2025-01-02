@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?kpzd0m');
-  src:  url('fonts/icomoon.eot?kpzd0m#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?kpzd0m') format('truetype'),
-    url('fonts/icomoon.woff?kpzd0m') format('woff'),
-    url('fonts/icomoon.svg?kpzd0m#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?itemas');
+  src:  url('fonts/icomoon.eot?itemas#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?itemas') format('truetype'),
+    url('fonts/icomoon.woff?itemas') format('woff'),
+    url('fonts/icomoon.svg?itemas#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -40,6 +40,9 @@
 .icon-times:before {
   content: "\f00d";
 }
+.icon-download:before {
+  content: "\f019";
+}
 .icon-twitter:before {
   content: "\f099";
 }
@@ -66,4 +69,64 @@
 }
 .icon-linkedin:before {
   content: "\eac9";
+}
+.icon-menu:before {
+  content: "\e910";
+}
+.icon-amazonaws:before {
+  content: "\e911";
+}
+.icon-css3:before {
+  content: "\e900";
+  color: #1572b6;
+}
+.icon-django:before {
+  content: "\e904";
+}
+.icon-flask:before {
+  content: "\e905";
+}
+.icon-git:before {
+  content: "\e906";
+  color: #f05032;
+}
+.icon-html5:before {
+  content: "\e907";
+  color: #e34f26;
+}
+.icon-javascript:before {
+  content: "\e908";
+  color: #f7df1e;
+}
+.icon-mongodb:before {
+  content: "\e912";
+  color: #47a248;
+}
+.icon-node-dot-js:before {
+  content: "\e909";
+  color: #393;
+}
+.icon-postgresql:before {
+  content: "\e90a";
+  color: #336791;
+}
+.icon-postman:before {
+  content: "\e90b";
+  color: #ff6c37;
+}
+.icon-python:before {
+  content: "\e90c";
+  color: #3776ab;
+}
+.icon-react:before {
+  content: "\e90d";
+  color: #61dafb;
+}
+.icon-tailwindcss:before {
+  content: "\e90e";
+  color: #38b2ac;
+}
+.icon-visualstudiocode:before {
+  content: "\e90f";
+  color: #007acc;
 }

@@ -97,10 +97,12 @@
 }
 
 .top-animation {
+    display: inline-block;
     position: relative;
     transition : 3s;
     animation: topbottom 2s infinite normal; 
     rotate: 180deg;
+    color: white;
 }
 
 
@@ -130,7 +132,10 @@
 @media(max-width: 700px){
     .Hero{
         padding-top: 10px;
-        height: 70vh;
+        height: 50vh;
+    }
+    .herocontent p{
+        margin: 10px 0;
     }
     .herocontent p:hover{
         transform: scale(1);  

@@ -1,0 +1,74 @@
+.skills{
+    padding: 10px 0;
+}
+
+.skills h2{
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, white,rgb(76, 76, 76));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 65px;
+    margin: 40px 0;
+}
+
+.skillset{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    gap: 20px 25px;
+}
+
+.relative{
+    position: relative;
+}
+.skillset i{
+    font-size: 60px;
+}
+.skillset i:before {
+    transition: all 0.3s ease; /* Define transition in the default state */
+}
+
+.skillset i:hover:before {
+    color: var(--subtitle); /* Retain or adjust the color */
+    filter: brightness(1.2); /* Brighten on hover */
+    transform: scale(1.1); /* Scale slightly */
+}
+
+.skillset i:hover + .skill-name {
+    display: block; 
+    animation: fadeIn 0.3s ease;
+}
+
+.skill-name {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-style: italic;
+    display: none;
+    backgroud-color: black;
+    border: 1px solid white;
+    padding: 1px 5px;
+    border-bottom: none;
+}
+.tools{
+    margin: 1px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media(max-width: 700px){
+    .skills h2 {
+        font-size: 25px;
+    }
+}

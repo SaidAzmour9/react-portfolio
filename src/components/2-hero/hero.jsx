@@ -2,7 +2,7 @@ import './hero.css';
 
 function Hero() {
   return (
-    <div className='Hero'>
+    <div className='Hero' id='home'>
       <div className='Hero__container'>
         <img src="/80750.png" alt="" />
         <div className='herocontent'>
@@ -16,7 +16,7 @@ function Hero() {
           <li><a href='#' className='icon-github'></a></li>
           <li><a href='#' className='icon-linkedin'></a></li>
         </ul>
-        <button className='icon-keyboard_arrow_up top-animation'></button>
+        <a href="#about" ><i className='icon-keyboard_arrow_up top-animation'></i></a>
       </div> 
 
     </div>
