@@ -50,10 +50,6 @@ function Skills() {
               <i className='icon-postgresql'></i>
               <span className='skill-name'>postgresql</span>
             </div>
-            
-            
-
-             
           </div>
 
         </div>

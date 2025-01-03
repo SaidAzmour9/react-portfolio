@@ -5,19 +5,21 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 60vh;
+    height: 70vh;
     
 }
 
 .Hero img{
-    border: solid 1px rgba(244,165,96,0.249);
+    border: solid 5px rgba(244,165,96,0.249);
     transition : 0.2s;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;   
+    padding: 2px;
+    box-shadow: inset 1px 1px 10px gray;
 }
 .Hero img:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
     border: solid 1px rgb(244,165,96);
 
 }
@@ -39,17 +41,18 @@
 }
 
 .herocontent h1 {
-    background: linear-gradient(to right, white,rgb(76, 76, 76));
+    background: linear-gradient(to right, white,rgb(75, 73, 73));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    margin-top: 40px;
-    font-size: 65px;
+    margin-top: 50px;
+    font-size: 75px;
 }
 
 .herocontent p{
-    margin: 8px 0;
+    margin: 12px 0;
     font-style: italic;
     color: #858B95;
+    font-size: 22px;
     transition : 1s;
 }
 .herocontent p:hover{
@@ -70,12 +73,12 @@
 
 .Hero .links{
     justify-content: center;
-    margin: 13px 0;
-    gap: 9px;
+    margin: 20px 0;
+    gap: 12px;
 }
 .Hero .links li a{
     color: var(--subtitle);
-    font-size: 25px;
+    font-size: 35px;
 }
 .Hero .links li a:hover{
     transform: scale(1.5);

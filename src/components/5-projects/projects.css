@@ -1,0 +1,129 @@
+.projects.flex {
+    gap: 3rem;
+    align-items: start;
+
+}
+.cards.flex{
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.projects.flex .left-section{
+    flex-direction: column;
+    gap: 8px;
+}
+
+.projects.flex .left-section button{
+    background-color: rgba(36, 37, 41, 1);
+    padding: 0.75rem 0;
+    width: 11rem;
+    text-align: center;
+    text-transform: capitalize;
+    opacity: 0.5;
+}
+.projects.flex .left-section button:hover {
+    opacity: 1;
+
+}
+.projects.flex .left-section button.active{
+    opacity: 1;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    padding: 0.8rem 0;
+}
+
+.card{
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    transition: 0.3s;
+    background-image: linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05));
+}
+.card:hover{
+    rotate: 1deg;
+    border: 1px solid var(--blue);
+    scale: 1.01;
+    cursor: pointer;
+
+
+}
+.card-img img{
+    width: 266px;
+}
+
+.card-img img{
+    width: 100%;
+}
+
+.card-img{
+    position: relative;
+}
+.card-img .tags{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    left: 10px;
+}
+.card-img .tags span{
+    background-color: gray;
+    margin: 3px;
+    padding: 3px 5px;
+
+}
+
+.card-body{
+    width: 266px;
+    padding: 0.77rem;
+}
+
+.card-body .card-title{
+    color: var(--title);
+    margin: 10px 0;
+    font-size: 1.5rem;
+    
+}
+
+.card-body p{
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin: 0.8rem 0;
+}
+.card-body .alinks{
+    display: flex;
+    justify-content:end;
+    gap: 1.1rem;
+}
+.card-body a{
+    color: var(--title);
+    font-size: 1.5rem;
+}
+.card-body a:hover{
+    color: var(--blue);
+}
+
+@media(max-width: 700px){
+    .container{
+        padding: 10px;
+    }
+    .projects.flex{
+        flex-direction: column;
+
+    }
+    .cards.flex{
+        margin: auto;
+        justify-content: center;
+    }
+    .projects.flex .left-section{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    .projects.flex .left-section button{
+        padding: 0.55rem;
+        width: 8rem;
+        text-align: center;
+    }
+}

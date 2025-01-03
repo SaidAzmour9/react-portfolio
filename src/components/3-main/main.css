@@ -26,19 +26,30 @@
 }
 
 .about-content button{
-    padding: 10px;
+    padding: 12px;
     border: solid 1px var(--blue);
-    border-radius: 15px;
+    border-radius: 6px;
     margin-right: 20px;
     transition: 1s;
     font-size: 18px;
     font-weight: 500;
     font-style: italic;
+    color: var(--title);
+    letter-spacing: 0.1rem
     
+}
+.about-content button.downl{
+    background-color: var(--title);
+    color: var(--bgHeader)
+
 }
 
 .about-content button:hover{
     background-color: var(--blue);
+    color: var(--title)
+}
+.about-content button.conta{
+
 }
 
 @media(max-width: 700px){

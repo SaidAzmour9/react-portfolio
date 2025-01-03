@@ -36,7 +36,8 @@ header .fixed{
     position: fixed;
     inset:0;
     z-index: 11;
-    background-color: rgb(40,40,48,0.81)
+    background-color: rgb(40,40,48,0.81);
+    backdrop-filter: blur(4px)
 }
 header button.mode, header .icon-menu{
     background-color: var(--bgHeader);
