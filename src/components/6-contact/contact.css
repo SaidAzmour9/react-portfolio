@@ -68,8 +68,12 @@
     .contact-content.flex form{
         width: 100%;
     }
-    .contact-content.flex form input, .contact-content.flex form textare{
+    .contact-content.flex form input{
         width: 90%;
+    }
+    .contact-content.flex form textare{
+        display:inline-block;
+        width: 80%;
     }
     .contact-content.flex form .message.flex{
         display: inline-block;

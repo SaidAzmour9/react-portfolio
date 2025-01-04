@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 70vh;
+    height: 80vh;
     
 }
 
@@ -135,7 +135,7 @@
 @media(max-width: 700px){
     .Hero{
         padding-top: 10px;
-        height: 50vh;
+        height: 60vh;
     }
     .herocontent p{
         margin: 10px 0;
