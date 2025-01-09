@@ -26,7 +26,7 @@ function App() {
       < Contact />
       <div className='divider'></div>
       < Footer />
-      <button><i className='icon-keyboard_arrow_up anim2top'></i></button>
+      <a href="#home"><button className='icon-keyboard_arrow_up anim2top'></button></a>
     </div>
    
   )

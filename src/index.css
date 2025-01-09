@@ -3,6 +3,7 @@
 html{
   font-family: "Roboto", serif;
   letter-spacing: 0.1px;
+  scroll-behavior: smooth;
 }
 
 *{
@@ -102,6 +103,18 @@ button:active{
 .anim2top{
   animation: anim2top 0.5s;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 40px;
+  right: 60px;
+  opacity: 0.6;
+  background-color: var(--blue);
+  color: var(--title); 
+  border-radius: 50%;
+  padding: 0;
+  border: 1px solid white;
 }
+a button.anim2top:hover{
+  color: white;
+  opacity: 1;
+  transform: scale(1)
+}
+
