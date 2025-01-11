@@ -10,16 +10,16 @@ const myProjects = [
     image: '/rezilla.png',
     link: 'https://rezilla-chi.vercel.app/',
     github: 'https://github.com/SaidAzmour9/rezilla',
-    tags : ['html','css', 'javascript']
+    tags: ['html', 'css', 'javascript'],
   },
   {
     name: 'Todo list',
-    description: 'A simple todo list application that allows users to add, remove, and mark tasks completed',
+    description: 'A simple todo list application that allows users to add, remove, and mark tasks completed.',
     category: 'front',
     image: '/todo.png',
     link: 'https://maradskrgh.netlify.app/',
     github: 'https://github.com/SaidAzmour9/todo-list-app',
-    tags : ['html','css', 'javascript']
+    tags: ['html', 'css', 'javascript'],
   },
   {
     name: 'Password generator',
@@ -28,66 +28,66 @@ const myProjects = [
     image: '/pass.png',
     link: 'https://legendary-torrone-1b088a.netlify.app/',
     github: 'https://github.com/SaidAzmour9/passgen',
-    tags : ['html','tailwindcss', 'jquery']
+    tags: ['html', 'tailwindcss', 'jquery'],
   },
   {
-    name: 'Team landing page',
-    description: 'A landing page for a fictional company that provides team collaboration tools.',
-    category: 'front',
-    image: '/team.png',
-    link: 'https://teampage-tailwind.netlify.app/',
-    github: 'https://github.com/SaidAzmour9/team-page',
-    tags : ['html','tailwindcss']
+    name: 'MyCourses backend',
+    description: 'A backend API for managing courses, students, teachers, and payments.',
+    category: 'back',
+    image: '/courback.webp',
+    link: '',
+    github: 'https://github.com/SaidAzmour9/mycourses_backend',
+    tags: ['Node.js', 'Express', 'PrismaORM'],
   },
-   
-]
-
+  {
+    name: 'BeautyHaven',
+    description: 'BeautyHaven is a Flask-based web app offering personalized cosmetics recommendations using machine learning.',
+    category: 'full',
+    image: '/cosme.jpg',
+    link: '',
+    github: 'https://github.com/SaidAzmour9/beautyHaven',
+    tags: ['html/css', 'bootstrap', 'flask'],
+  },
+];
 
 function Projects() {
   const [currentActive, setCurrentActive] = useState('all');
   const [projects, setProjects] = useState(myProjects);
-  return (
-      <section className='projects flex'>
-        <section className='flex left-section'>
-          <button onClick={() =>{
-             setCurrentActive('all');
-             setProjects(myProjects);
-            }
-          } className={currentActive=== "all"?"active": null}>all projects</button>
-          <button  onClick={() =>{
-             setCurrentActive('front');
-            const newArr = myProjects.filter((item)=>{
-              return item.category === 'front';
-            })
-             setProjects(newArr);
-          }
-          } className={currentActive=== "front"?"active": null}>Frontend projects</button>
-          <button onClick={
-            () => {setCurrentActive('back');
-              const newArr = myProjects.filter((item)=>{
-                return item.category === 'back';
-                })
-                setProjects(newArr);
-                }
-          } className={currentActive=== "back"?"active": null}>Backend projects</button>
-          <button onClick={
-            () => {setCurrentActive('full');
-              const newArr = myProjects.filter((item)=>{
-                return item.category === 'full';
-                })
-                setProjects(newArr);
-                }
-          } className={currentActive=== "full"?"active": null}>Full stack</button>
 
-        </section>
-        <section className='cards flex'>
-          {projects.map((item)=>{
-          return (
-            <div className="card" key={item.image}>
+  const filterProjects = (category) => {
+    setCurrentActive(category);
+    if (category === 'all') {
+      setProjects(myProjects);
+    } else {
+      const filtered = myProjects.filter((item) => item.category === category);
+      setProjects(filtered);
+    }
+  };
+
+  return (
+    <section className='projects flex'>
+      {/* Filter Buttons */}
+      <section className='flex left-section'>
+        {['all', 'front', 'back', 'full'].map((category) => (
+          <button
+            key={category}
+            onClick={() => filterProjects(category)}
+            className={currentActive === category ? 'active' : null}
+            aria-pressed={currentActive === category}
+          >
+            {category.charAt(0).toUpperCase() + category.slice(1)} projects
+          </button>
+        ))}
+      </section>
+
+      {/* Project Cards */}
+      <section className='cards flex'>
+        {projects.map((item) => (
+          <div className="card" key={item.name}>
             <div className="card-img">
-              <img src={item.image} alt="Card image cap"/>
+              <img src={item.image} alt={`${item.name} screenshot`} />
               <div className='tags'>
-              {item.tags && item.tags.map((tag, index) => (
+                {item.tags.map((tag, index) => (
                   <span key={index}>{tag}</span>
                 ))}
               </div>
@@ -96,19 +96,29 @@ function Projects() {
               <h5 className="card-title">{item.name}</h5>
               <p className="card-text">{item.description}</p>
               <div className="alinks">
-              <a href={item.github} className='icon-github' target="_blank" rel="noopener noreferrer"></a>
-                <a href={item.link} className='icon-chain' target="_blank" rel="noopener noreferrer"></a>
+                <a
+                  href={item.github}
+                  className='icon-github'
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="GitHub Repository"
+                ></a>
+                {item.link && (
+                  <a
+                    href={item.link}
+                    className='icon-chain'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Live Demo"
+                  ></a>
+                )}
               </div>
             </div>
-            </div>
-          
-          )
-          })}
-          
-          
-        </section>
+          </div>
+        ))}
       </section>
-  )
+    </section>
+  );
 }
 
-export default Projects 
+export default Projects;
