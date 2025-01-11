@@ -34,6 +34,7 @@
 }
 
 .card{
+    width: 266px;
     border: 1px solid rgba(93, 188, 252, 0.3);
     transition: 0.3s;
     background-image: linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05));
@@ -47,12 +48,11 @@
 
 }
 .card-img img{
-    width: 266px;
+    width: 100%;
+    height: 176px;
 }
 
-.card-img img{
-    width: 100%;
-}
+
 
 .card-img{
     position: relative;
