@@ -24,12 +24,19 @@ html{
 }
 
 .light{
-  --primary: #fff;
+  --primary: rgb(255,255,255);
+  --secondary: rgb(255,255,255);
+  --border: rgba(213, 213, 255, 0.4);
+  --title: #18181B;
+  --subtitle: rgba(63,63, 70, 0.4);
+  --bgHeader: rgb(255, 255, 255);
+  --blue: rgb(93,188,252)
+
 }
 
 body{
   background-color: var(--primary);
-  color: #fff;
+  color: var(--title);
 }
 
 .container{
@@ -42,7 +49,7 @@ body{
 
 .divider{
   border-bottom: 0.8px solid var(--border);
-  margin: 2rem 0;
+  margin: 1rem 0;
 
 }
 

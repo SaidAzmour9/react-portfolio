@@ -1,9 +1,16 @@
 import './header.css';
 
-import { useState } from 'react';
+import {
+  useEffect,
+  useState,
+} from 'react';
 
 function Header() {
   const [showModal, setShowModal] = useState(false); 
+  const [theme, setTheme] = useState("dark");
+  useEffect(()=>{
+    document.body.classList.toggle(theme)
+  },[theme])
   return (
     <header className='flex'>
       <div>
@@ -21,7 +28,10 @@ function Header() {
 
         </ul>
       </nav>
-      <button className='mode flex'>
+      <button onClick={() => {
+        setTheme(theme === "dark" ? "light" : "dark");
+      }
+      } className='mode flex'>
         <span className='icon-moon-o'></span>
       </button>
     {showModal &&(

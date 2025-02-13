@@ -77,12 +77,15 @@
 }
 
 .card-img .tags span {
-    background-color: var(--dark-gray);
+    background-color: rgb(42, 42, 45);
     margin: 3px;
     padding: 3px 8px;
     color: white;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     border-radius: 3px;
+    text-transform: capitalize;
+    border: 1px solid white;
+    outline: 1px solid black;
 }
 
 .card-body {

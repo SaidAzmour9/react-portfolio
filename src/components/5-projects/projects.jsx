@@ -25,7 +25,7 @@ const myProjects = [
     name: 'Password generator',
     description: 'A password generator that generates a random password based on user choice.',
     category: 'front',
-    image: '/pass.png',
+    image: '/passgen.webp',
     link: 'https://legendary-torrone-1b088a.netlify.app/',
     github: 'https://github.com/SaidAzmour9/passgen',
     tags: ['html', 'tailwindcss', 'jquery'],
@@ -34,10 +34,10 @@ const myProjects = [
     name: 'MyCourses backend',
     description: 'A backend API for managing courses, students, teachers, and payments.',
     category: 'back',
-    image: '/courback.webp',
+    image: '/API.jpg',
     link: '',
     github: 'https://github.com/SaidAzmour9/mycourses_backend',
-    tags: ['Node.js', 'Express', 'PrismaORM'],
+    tags: ['NodeJs', 'Express', 'Prisma'],
   },
   {
     name: 'BeautyHaven',
@@ -48,6 +48,51 @@ const myProjects = [
     github: 'https://github.com/SaidAzmour9/beautyHaven',
     tags: ['html/css', 'bootstrap', 'flask'],
   },
+  {
+    name: 'Portfolio',
+    description: 'A personal portfolio website showcasing my projects and skills.',
+    category: 'front',
+    image: '/portfolio.png',
+    link: 'https://saidazmour9.github.io/portfolio/',
+    github: 'https://github.com/SaidAzmour9/portfolio',
+    tags: ['html', 'css', 'Reactjs'],
+  },
+  {
+    name: 'Notes management api',
+    description: 'A simple REST API for managing notes, users and authentication.',
+    category: 'back',
+    image: '/courback.webp',
+    link: '',
+    github: 'https://github.com/SaidAzmour9/notes-api',
+    tags: ['NodeJs', 'Express', 'Prisma'],
+  },
+  {
+    name: 'Youtube playlist Downloader',
+    description: 'A simple web app that allows users to download YouTube playlists.',
+    category: 'back',
+    image: '/youtubedown.jpeg',
+    link: '',
+    github: 'https://github.com/SaidAzmour9/youtube-downloader',
+    tags: ['Python']
+  },
+  {
+    name: 'flustter Blog',
+    description: 'A flustter app that allows users to create and share blog posts.',
+    category: 'full',
+    image: '/flustter.png',
+    link: 'https://flustter.com',
+    github: 'https://github.com/SaidAzmour9/flutter_arabic_blog',
+    tags: ['html/css', 'Bootstrap','Django']
+  },
+  {
+    name: 'Aga Job',
+    description: 'A simple web app that allows users to search for jobs in Agadir.',
+    category: 'full',
+    image: '/agajob.jpg',
+    link: 'https://agadir-jobs.netlify.app/',
+    github: 'https://github.com/SaidAzmour9/agadir-jobs',
+    tags: ['html/css', 'Bootstrap', 'Django']
+  }
 ];
 
 function Projects() {
